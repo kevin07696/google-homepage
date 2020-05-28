@@ -1,0 +1,136 @@
+body {
+    font-family: Helvetica, sans-serif;
+    font-size: 1em;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+main {
+    margin-bottom: auto;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container > a > img {
+    width: 25vw;
+    height: auto;
+    margin-bottom: 2em;
+}
+.container > form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+form > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+form > div > button {
+    padding: .75em 1em;
+    margin: 0 1em;
+    background-color:rgb(237, 237, 237);
+    border: none;
+    border-radius: 3px;
+}
+
+form > div > button:hover {
+    box-shadow: 0 0 0 .75px rgb(116, 116, 116);
+    cursor: pointer;
+}
+
+input {
+    width: 35vw;
+    height: 3em;
+    padding: 0.5em 1em;
+    box-shadow: gray;
+    margin-bottom: 2em;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1.5em 2em;
+    font-size: 1em;
+    margin-bottom: 15vh;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 1em;
+    padding: 0.75em 2em;
+    margin: 0;
+    background-color: rgba(116, 116, 116, 0.153);
+}
+
+nav > div {
+    display: flex;
+    flex-direction: column;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+}
+
+ul > li {
+    margin-right: 1em;
+}
+
+ul > li:last-child {
+    margin-right: 0;
+}
+
+ul > li > a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.886);
+}
+
+footer > div > ul > li > a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.721);
+}
+
+ul > li > a#SignIn {
+    padding: .4em 1em;
+    color: white;
+    background-color: rgb(51, 126, 218);
+    border-radius: 5%;
+}
+
+.option-grid {
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    width: 1em;
+    height: 1em;
+    align-self: center;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-wrap: wrap;
+    
+}
+.option-grid > div{
+    background-color: gray;
+    width: 26%;
+    height: 26%;
+}
+
+footer > div {
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+
