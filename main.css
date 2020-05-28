@@ -5,6 +5,64 @@ body {
     flex-direction: column;
     margin: 0;
 }
+/* Header */
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1.5em 2em;
+    font-size: 1em;
+    margin-bottom: 15vh;
+}
+nav > div {
+    display: flex;
+    flex-direction: column;
+}
+.option-grid {
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    width: 1em;
+    height: 1em;
+    align-self: center;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-wrap: wrap;
+    
+}
+.option-grid > div{
+    background-color: gray;
+    width: 26%;
+    height: 26%;
+}
+/* Used in Header and Footer */
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+}
+ul > li {
+    margin-right: 1em;
+}
+
+ul > li:last-child {
+    margin-right: 0;
+}
+ul > li > a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.886);
+}
+ul > li > a#SignIn {
+    padding: .4em 1em;
+    color: white;
+    background-color: rgb(51, 126, 218);
+    border-radius: 5%;
+    text-decoration: none;
+}
+
+/* Main */
 main {
     margin-bottom: auto;
 }
@@ -37,12 +95,6 @@ form > div > button {
     border: none;
     border-radius: 3px;
 }
-
-form > div > button:hover {
-    box-shadow: 0 0 0 .75px rgb(116, 116, 116);
-    cursor: pointer;
-}
-
 input {
     width: 35vw;
     height: 3em;
@@ -50,16 +102,7 @@ input {
     box-shadow: gray;
     margin-bottom: 2em;
 }
-
-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 1.5em 2em;
-    font-size: 1em;
-    margin-bottom: 15vh;
-}
-
+/* Footer */
 footer {
     display: flex;
     flex-direction: row;
@@ -69,68 +112,22 @@ footer {
     margin: 0;
     background-color: rgba(116, 116, 116, 0.153);
 }
-
-nav > div {
-    display: flex;
-    flex-direction: column;
-}
-
-ul {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    margin: 0;
-    padding: 0;
-}
-
-ul > li {
-    margin-right: 1em;
-}
-
-ul > li:last-child {
-    margin-right: 0;
-}
-
-ul > li > a {
-    text-decoration: none;
-    color: rgba(0, 0, 0, 0.886);
-}
-
-footer > div > ul > li > a {
-    text-decoration: none;
-    color: rgba(0, 0, 0, 0.721);
-}
-
-ul > li > a#SignIn {
-    padding: .4em 1em;
-    color: white;
-    background-color: rgb(51, 126, 218);
-    border-radius: 5%;
-}
-
-.option-grid {
-    background-color: transparent;
-    display: flex;
-    flex-direction: row;
-    width: 1em;
-    height: 1em;
-    align-self: center;
-    justify-content: space-between;
-    align-content: space-between;
-    flex-wrap: wrap;
-    
-}
-.option-grid > div{
-    background-color: gray;
-    width: 26%;
-    height: 26%;
-}
-
 footer > div {
     display: flex;
     flex-direction: row;
 }
-
-
-
-
+footer > div > ul > li > a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.721);
+}
+/* Hover Effects */
+form > div > button:hover {
+    box-shadow: 0 0 0 .75px rgb(116, 116, 116);
+    cursor: pointer;
+}
+ul > li > a:hover {
+    text-decoration: underline;
+}
+.option-grid:hover > div {
+    background-color: rgba(0, 0, 0, 0.886);
+}
