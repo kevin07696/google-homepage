@@ -10,6 +10,7 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     padding: 1.5em 2em;
     font-size: 1em;
     margin-bottom: 15vh;
@@ -24,9 +25,8 @@ nav > div {
     flex-direction: row;
     width: 1em;
     height: 1em;
-    align-self: center;
     justify-content: space-between;
-    align-content: space-between;
+    align-items: space-between;
     flex-wrap: wrap;
     
 }
@@ -86,6 +86,24 @@ form > div {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
+}
+
+[src="imgs/search.svg"] {
+    height: 1em;
+    width: auto;
+}
+
+[src="imgs/Google_mic.svg"] {
+    height: 1.2em;
+    width: auto;
+}
+
+.search-container {
+    margin-bottom: 2em;
+    border: 1px rgba(169, 169, 169, 0.331) solid;
+    padding: 0.25em 1em;
+    border-radius: 2em;
 }
 
 form > div > button {
@@ -99,8 +117,7 @@ input {
     width: 35vw;
     height: 3em;
     padding: 0.5em 1em;
-    box-shadow: gray;
-    margin-bottom: 2em;
+    border: none;
 }
 /* Footer */
 footer {
@@ -130,4 +147,14 @@ ul > li > a:hover {
 }
 .option-grid:hover > div {
     background-color: rgba(0, 0, 0, 0.886);
+}
+/* on-Click Effects */
+input:focus, input:active, input:focus:active {
+    box-shadow: none;
+    outline: none;
+}
+
+.search-container:focus, .search-container:active, 
+.search-container:hover, .search-container:focus:active {
+    box-shadow: 0 1px 2px 2px rgba(169, 169, 169, 0.173);
 }
