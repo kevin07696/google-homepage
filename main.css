@@ -59,7 +59,7 @@ ul {
     padding: 0;
 }
 ul > li {
-    margin-right: 1em;
+    margin-right: 1.5em;
 }
 
 ul > li:last-child {
